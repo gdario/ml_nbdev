@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "ml_nbdev"
+  site-url: "https://gdario.github.io/ml_nbdev"
+  description: "Using scikit-learn with nbdev"
+  repo-branch: main
+  repo-url: "https://github.com/gdario/ml_nbdev"
