@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ml_nbdev",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "ml_nbdev",
+    "section": "Install",
+    "text": "Install\npip install ml_nbdev"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "ml_nbdev",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2"
+  },
+  {
+    "objectID": "get_data.html",
+    "href": "get_data.html",
+    "title": "get_data",
+    "section": "",
+    "text": "The purpose of this module is to explore the Olivetti faces dataset.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom sklearn.datasets import fetch_olivetti_faces\n\n\nrng = np.random.RandomState(0)\nfaces, _ = fetch_olivetti_faces(return_X_y=True, shuffle=True, random_state=rng)\n\n\nn_samples, n_features = faces.shape\n\n\nfaces.shape\n\n(400, 4096)\n\n\n\nsource\n\n\n\n plot_random_face (faces_dset)\n\nPlot a randomly selected face from the Olivetti faces dataset\nfaces_dset: the scikit-learn dataset containing the faces.\n\nplot_random_face(faces)\n\n\n\n\n\nfaces.shape\n\n(400, 4096)\n\n\n\ndef plot_average_face(faces_dset, fn):\n    \"\"\"Plot the average or median face\"\"\"\n    if fn == 'average':\n        avg_face = faces_dset.mean(axis=0)\n    elif fn == 'median':\n        avg_face = np.median(faces_dset, axis=0)\n    plt.imshow(avg_face.reshape(64, 64))\n\n\nplot_average_face(faces, 'average')\n\n\n\n\n\nplot_average_face(faces, 'median')"
+  }
+]
