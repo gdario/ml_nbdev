@@ -5,4 +5,4 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://gdario.github.io',
                 'git_url': 'https://github.com/gdario/ml_nbdev',
                 'lib_path': 'ml_nbdev'},
-  'syms': {'ml_nbdev.core': {'ml_nbdev.core.foo': ('core.html#foo', 'ml_nbdev/core.py')}}}
+  'syms': {'ml_nbdev.core': {'ml_nbdev.core.plot_random_face': ('get_data.html#plot_random_face', 'ml_nbdev/core.py')}}}
